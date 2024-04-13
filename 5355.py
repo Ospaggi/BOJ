@@ -4,12 +4,12 @@
 #출력은 소슛점 2자리까지만
 t=int(input())
 for i in range (0,t):
-	buf=input()
-	n=int(buf[0])
+	buf=input().split()
+	n=float(buf[0])
 	for j in buf:
-		if isinstance(j,int) or isinstance(j,float): continue
 		if j=='@': n*=3
 		if j=='%': n+=5
 		if j=='#': n-=7
+		#print(f"Buffer: {j}")
 	print("{:.2f}".format(n))
 	
