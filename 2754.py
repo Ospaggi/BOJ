@@ -1,3 +1,4 @@
+#Filthy code
 #+: 0 0: 1 -: 2
 #A: 1 B: 4 C: 7 D: 10
 def main(s):
@@ -7,8 +8,8 @@ def main(s):
 	grade=46
 	for i in range(0,n): 
 		grade-=3
-		if str(grade)[1]=="3" and i>0: grade-=1
+		if str(grade)[1]=="4" and i>0: grade-=1
 	rtrn=str(grade)[0]+"."+str(grade)[1]
 	return rtrn
 s=input()
-print("0.0" if s=="F" else main(s))
+print("0.0" if s=="F" else "0.7" if s=="D-" else main(s))
